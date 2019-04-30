@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $NODE_ENV = "production" ]; then
+if [[ $NODE_ENV = "production" ]]; then
   node dist/entries/seed.js
 else
   ts-node src/entries/seed.ts
