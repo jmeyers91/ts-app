@@ -112,7 +112,7 @@
 
 **● createdAt**: *`string`*
 
-*Defined in [models/User.model.ts:21](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L21)*
+*Defined in [models/User.model.ts:21](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L21)*
 
 ___
 <a id="email"></a>
@@ -121,7 +121,7 @@ ___
 
 **● email**: *`string`*
 
-*Defined in [models/User.model.ts:19](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L19)*
+*Defined in [models/User.model.ts:19](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L19)*
 
 ___
 <a id="id"></a>
@@ -130,7 +130,7 @@ ___
 
 **● id**: *`number`*
 
-*Defined in [models/User.model.ts:18](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L18)*
+*Defined in [models/User.model.ts:18](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L18)*
 
 ___
 <a id="password"></a>
@@ -139,7 +139,7 @@ ___
 
 **● password**: *`string`*
 
-*Defined in [models/User.model.ts:20](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L20)*
+*Defined in [models/User.model.ts:20](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L20)*
 
 ___
 <a id="updatedat"></a>
@@ -148,7 +148,7 @@ ___
 
 **● updatedAt**: *`string`*
 
-*Defined in [models/User.model.ts:22](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L22)*
+*Defined in [models/User.model.ts:22](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L22)*
 
 ___
 <a id="belongstoonerelation"></a>
@@ -412,7 +412,7 @@ ___
 
 *Overrides Model.relationMappings*
 
-*Defined in [models/User.model.ts:16](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L16)*
+*Defined in [models/User.model.ts:16](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L16)*
 
 #### Type declaration
 
@@ -425,7 +425,7 @@ ___
 
 *Overrides Model.tableName*
 
-*Defined in [models/User.model.ts:4](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L4)*
+*Defined in [models/User.model.ts:4](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L4)*
 
 ___
 <a id="uidprop"></a>
@@ -1537,7 +1537,7 @@ ___
 
 *Overrides Model.jsonSchema*
 
-*Defined in [models/User.model.ts:6](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L6)*
+*Defined in [models/User.model.ts:6](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L6)*
 
 <a id="jsonschema.required"></a>
 
@@ -1545,7 +1545,7 @@ ___
 
 **● required**: *`string`[]* =  ['email', 'password']
 
-*Defined in [models/User.model.ts:8](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L8)*
+*Defined in [models/User.model.ts:8](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L8)*
 
 ___
 <a id="jsonschema.type"></a>
@@ -1554,7 +1554,7 @@ ___
 
 **● type**: *`string`* = "object"
 
-*Defined in [models/User.model.ts:7](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L7)*
+*Defined in [models/User.model.ts:7](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L7)*
 
 ___
 <a id="jsonschema.properties"></a>
@@ -1563,7 +1563,7 @@ ___
 
 **properties**: *`object`*
 
-*Defined in [models/User.model.ts:9](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L9)*
+*Defined in [models/User.model.ts:9](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L9)*
 
 <a id="jsonschema.properties.email-1"></a>
 
@@ -1571,7 +1571,7 @@ ___
 
 **email**: *`object`*
 
-*Defined in [models/User.model.ts:11](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L11)*
+*Defined in [models/User.model.ts:11](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L11)*
 
 <a id="jsonschema.properties.email-1.type-1"></a>
 
@@ -1579,7 +1579,7 @@ ___
 
 **● type**: *`string`* = "string"
 
-*Defined in [models/User.model.ts:11](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L11)*
+*Defined in [models/User.model.ts:11](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L11)*
 
 ___
 
@@ -1590,7 +1590,7 @@ ___
 
 **id**: *`object`*
 
-*Defined in [models/User.model.ts:10](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L10)*
+*Defined in [models/User.model.ts:10](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L10)*
 
 <a id="jsonschema.properties.id-1.type-2"></a>
 
@@ -1598,7 +1598,7 @@ ___
 
 **● type**: *`string`* = "integer"
 
-*Defined in [models/User.model.ts:10](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L10)*
+*Defined in [models/User.model.ts:10](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L10)*
 
 ___
 
@@ -1609,7 +1609,7 @@ ___
 
 **password**: *`object`*
 
-*Defined in [models/User.model.ts:12](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L12)*
+*Defined in [models/User.model.ts:12](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L12)*
 
 <a id="jsonschema.properties.password-1.type-3"></a>
 
@@ -1617,7 +1617,7 @@ ___
 
 **● type**: *`string`* = "string"
 
-*Defined in [models/User.model.ts:12](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/User.model.ts#L12)*
+*Defined in [models/User.model.ts:12](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/User.model.ts#L12)*
 
 ___
 

@@ -25,7 +25,9 @@
 
 **● DATABASE_URL**: *`string`* =  env.DATABASE_URL
 
-*Defined in [env.ts:27](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/env.ts#L27)*
+*Defined in [env.ts:50](https://github.com/jmeyers91/ts-app/blob/a37a505/src/env.ts#L50)*
+
+PostgreSQL database URL for storing models.
 
 ___
 <a id="port"></a>
@@ -34,7 +36,9 @@ ___
 
 **● PORT**: *`string`* =  env.PORT || '8080'
 
-*Defined in [env.ts:23](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/env.ts#L23)*
+*Defined in [env.ts:39](https://github.com/jmeyers91/ts-app/blob/a37a505/src/env.ts#L39)*
+
+Port the API server should listen on. Defaults to 8080.
 
 ___
 <a id="test_database_url"></a>
@@ -43,7 +47,9 @@ ___
 
 **● TEST_DATABASE_URL**: *`undefined` \| `string`* =  env.TEST_DATABASE_URL
 
-*Defined in [env.ts:29](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/env.ts#L29)*
+*Defined in [env.ts:55](https://github.com/jmeyers91/ts-app/blob/a37a505/src/env.ts#L55)*
+
+PostgreSQL database URL for storing models in tests.
 
 ___
 <a id="test_port"></a>
@@ -52,7 +58,9 @@ ___
 
 **● TEST_PORT**: *`string`* =  env.TEST_PORT || '8081'
 
-*Defined in [env.ts:25](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/env.ts#L25)*
+*Defined in [env.ts:45](https://github.com/jmeyers91/ts-app/blob/a37a505/src/env.ts#L45)*
+
+Port the API server should listen on during tests. Defaults to 8081
 
 ___
 <a id="env"></a>
@@ -61,7 +69,7 @@ ___
 
 **● env**: *`ProcessEnv`* =  process.env
 
-*Defined in [env.ts:4](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/env.ts#L4)*
+*Defined in [env.ts:4](https://github.com/jmeyers91/ts-app/blob/a37a505/src/env.ts#L4)*
 
 ___
 <a id="isdev"></a>
@@ -70,7 +78,9 @@ ___
 
 **● isDev**: *`boolean`* =  env.NODE_ENV === 'development'
 
-*Defined in [env.ts:8](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/env.ts#L8)*
+*Defined in [env.ts:16](https://github.com/jmeyers91/ts-app/blob/a37a505/src/env.ts#L16)*
+
+Is the app running in a development environment.
 
 ___
 <a id="isprod"></a>
@@ -79,7 +89,9 @@ ___
 
 **● isProd**: *`boolean`* =  env.NODE_ENV === 'production'
 
-*Defined in [env.ts:9](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/env.ts#L9)*
+*Defined in [env.ts:21](https://github.com/jmeyers91/ts-app/blob/a37a505/src/env.ts#L21)*
+
+Is the app running in a production environment.
 
 ___
 <a id="istest"></a>
@@ -88,7 +100,9 @@ ___
 
 **● isTest**: *`boolean`* =  env.NODE_ENV === 'test'
 
-*Defined in [env.ts:7](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/env.ts#L7)*
+*Defined in [env.ts:11](https://github.com/jmeyers91/ts-app/blob/a37a505/src/env.ts#L11)*
+
+Is the app running in a test environment. If true, the test database and port variables will be used.
 
 ___
 

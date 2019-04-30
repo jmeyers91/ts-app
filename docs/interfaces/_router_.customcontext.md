@@ -22,7 +22,7 @@
 
 **● arp**: *[App](../classes/_app_.app.md)*
 
-*Defined in [Router.ts:5](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/Router.ts#L5)*
+*Defined in [Router.ts:5](https://github.com/jmeyers91/ts-app/blob/a37a505/src/Router.ts#L5)*
 
 ___
 

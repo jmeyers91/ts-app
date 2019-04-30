@@ -18,7 +18,7 @@
 
 ▸ **checkPassword**(password: *`string`*, hashedPassword: *`string`*): `Promise`<`boolean`>
 
-*Defined in [utils/checkPassword.ts:7](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/checkPassword.ts#L7)*
+*Defined in [utils/checkPassword.ts:7](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/checkPassword.ts#L7)*
 
 Compares a plain text password with a hashed password. Returns a promise that resolves `true` if the passwords match.
 

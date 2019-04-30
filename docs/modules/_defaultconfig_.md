@@ -18,7 +18,7 @@
 
 ▸ **defaultConfig**(): [AppConfig](../interfaces/_appconfig_.appconfig.md)
 
-*Defined in [defaultConfig.ts:12](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/defaultConfig.ts#L12)*
+*Defined in [defaultConfig.ts:12](https://github.com/jmeyers91/ts-app/blob/a37a505/src/defaultConfig.ts#L12)*
 
 **Returns:** [AppConfig](../interfaces/_appconfig_.appconfig.md)
 

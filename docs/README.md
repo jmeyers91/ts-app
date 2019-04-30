@@ -10,7 +10,7 @@ cd ts-app
 npm install
 ```
 
-Setup your custom env (optional).
+Setup your custom env. See the [env docs](docs/modules/_env_.md) for more info.
 
 ```
 cp .env.example .env

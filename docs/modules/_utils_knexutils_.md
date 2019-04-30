@@ -32,7 +32,7 @@
 
 **Ƭ BuildTable**: *`function`*
 
-*Defined in [utils/knexUtils.ts:91](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/knexUtils.ts#L91)*
+*Defined in [utils/knexUtils.ts:91](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L91)*
 
 #### Type declaration
 ▸(builder: *`TableBuilder`*): `any`
@@ -52,7 +52,7 @@ ___
 
 **Ƭ MigrateFunction**: *`function`*
 
-*Defined in [utils/knexUtils.ts:90](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/knexUtils.ts#L90)*
+*Defined in [utils/knexUtils.ts:90](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L90)*
 
 #### Type declaration
 ▸(knex: *`Knex`*): `Promise`<`void`>
@@ -72,7 +72,7 @@ ___
 
 **Ƭ MigratorConfigWithSource**: *`MigratorConfig` & `object`*
 
-*Defined in [utils/knexUtils.ts:87](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/knexUtils.ts#L87)*
+*Defined in [utils/knexUtils.ts:87](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L87)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **alterTable**(tableName: *`string`*, buildTable: *[BuildTable](_utils_knexutils_.md#buildtable)*): [MigrateFunction](_utils_knexutils_.md#migratefunction)
 
-*Defined in [utils/knexUtils.ts:76](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/knexUtils.ts#L76)*
+*Defined in [utils/knexUtils.ts:76](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L76)*
 
 Creates an up migration function that creates `tableName` if it doesn't exist using the `buildTable` function to define columns and relations.
 
@@ -104,7 +104,7 @@ ___
 
 ▸ **downTable**(tableName: *`string`*): [MigrateFunction](_utils_knexutils_.md#migratefunction)
 
-*Defined in [utils/knexUtils.ts:45](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/knexUtils.ts#L45)*
+*Defined in [utils/knexUtils.ts:45](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L45)*
 
 Creates a migration function that drops `tableName` if it exists.
 
@@ -124,7 +124,7 @@ ___
 
 ▸ **migrateLatest**(knex: *`Knex`*, migrations: *[Migration](../interfaces/_migration_.migration.md)[]*): `Promise`<`string`[]>
 
-*Defined in [utils/knexUtils.ts:11](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/knexUtils.ts#L11)*
+*Defined in [utils/knexUtils.ts:11](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L11)*
 
 Runs the passed knex migrations.
 
@@ -145,7 +145,7 @@ ___
 
 ▸ **migrateRollback**(knex: *`Knex`*, migrations: *[Migration](../interfaces/_migration_.migration.md)[]*): `Promise`<`void`>
 
-*Defined in [utils/knexUtils.ts:29](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/knexUtils.ts#L29)*
+*Defined in [utils/knexUtils.ts:29](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L29)*
 
 Rolls back the passed knex migrations.
 
@@ -166,7 +166,7 @@ ___
 
 ▸ **upTable**(tableName: *`string`*, buildTable: *[BuildTable](_utils_knexutils_.md#buildtable)*): [MigrateFunction](_utils_knexutils_.md#migratefunction)
 
-*Defined in [utils/knexUtils.ts:58](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/knexUtils.ts#L58)*
+*Defined in [utils/knexUtils.ts:58](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L58)*
 
 Creates a migration function that creates `tableName` if it doesn't exist using the `buildTable` function to define columns and relations.
 

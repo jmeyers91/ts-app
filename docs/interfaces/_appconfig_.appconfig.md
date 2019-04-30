@@ -23,7 +23,7 @@
 
 **● database**: *`Knex`*
 
-*Defined in [AppConfig.ts:5](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/AppConfig.ts#L5)*
+*Defined in [AppConfig.ts:5](https://github.com/jmeyers91/ts-app/blob/a37a505/src/AppConfig.ts#L5)*
 
 ___
 <a id="port"></a>
@@ -32,7 +32,7 @@ ___
 
 **● port**: *`number`*
 
-*Defined in [AppConfig.ts:4](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/AppConfig.ts#L4)*
+*Defined in [AppConfig.ts:4](https://github.com/jmeyers91/ts-app/blob/a37a505/src/AppConfig.ts#L4)*
 
 ___
 

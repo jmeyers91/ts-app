@@ -18,7 +18,7 @@
 
 ▸ **fail**(message: *`string`*, status?: *`number`*): `never`
 
-*Defined in [utils/fail.ts:1](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/fail.ts#L1)*
+*Defined in [utils/fail.ts:1](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/fail.ts#L1)*
 
 **Parameters:**
 

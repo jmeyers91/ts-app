@@ -18,7 +18,7 @@
 
 ▸ **createUsers**(app: *[App](../classes/_app_.app.md)*): `Promise`<`void`>
 
-*Defined in [seeds/createUsers.seed.ts:4](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/seeds/createUsers.seed.ts#L4)*
+*Defined in [seeds/createUsers.seed.ts:4](https://github.com/jmeyers91/ts-app/blob/a37a505/src/seeds/createUsers.seed.ts#L4)*
 
 **Parameters:**
 

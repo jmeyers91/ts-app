@@ -18,7 +18,7 @@
 
 ▸ **main**(): `Promise`<`void`>
 
-*Defined in [entries/seed.ts:6](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/entries/seed.ts#L6)*
+*Defined in [entries/seed.ts:6](https://github.com/jmeyers91/ts-app/blob/a37a505/src/entries/seed.ts#L6)*
 
 **Returns:** `Promise`<`void`>
 

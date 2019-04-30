@@ -40,7 +40,7 @@
 
 ⊕ **new App**(config: *[AppConfig](../interfaces/_appconfig_.appconfig.md)*): [App](_app_.app.md)
 
-*Defined in [App.ts:22](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L22)*
+*Defined in [App.ts:22](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L22)*
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ ___
 
 **● config**: *[AppConfig](../interfaces/_appconfig_.appconfig.md)*
 
-*Defined in [App.ts:24](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L24)*
+*Defined in [App.ts:24](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L24)*
 
 ___
 <a id="database"></a>
@@ -69,7 +69,7 @@ ___
 
 **● database**: *`Knex`*
 
-*Defined in [App.ts:20](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L20)*
+*Defined in [App.ts:20](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L20)*
 
 ___
 <a id="httpserver"></a>
@@ -78,7 +78,7 @@ ___
 
 **● httpServer**: *`HttpServer` \| `null`*
 
-*Defined in [App.ts:22](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L22)*
+*Defined in [App.ts:22](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L22)*
 
 ___
 <a id="models"></a>
@@ -87,7 +87,7 @@ ___
 
 **● models**: *`object`*
 
-*Defined in [App.ts:21](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L21)*
+*Defined in [App.ts:21](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L21)*
 
 #### Type declaration
 
@@ -100,7 +100,7 @@ ___
 
 **● webserver**: *`Koa`*
 
-*Defined in [App.ts:19](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L19)*
+*Defined in [App.ts:19](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L19)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **listen**(): `Promise`<`void`>
 
-*Defined in [App.ts:42](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L42)*
+*Defined in [App.ts:42](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L42)*
 
 Start listening for API requests.
 
@@ -125,7 +125,7 @@ ___
 
 ▸ **migrate**(): `Promise`<`string`[]>
 
-*Defined in [App.ts:142](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L142)*
+*Defined in [App.ts:142](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L142)*
 
 Run database migrations.
 
@@ -138,7 +138,7 @@ ___
 
 ▸ **rollback**(): `Promise`<`void`>
 
-*Defined in [App.ts:158](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L158)*
+*Defined in [App.ts:158](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L158)*
 
 Roll database back to last migration.
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **seed**(): `Promise`<`void`>
 
-*Defined in [App.ts:149](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L149)*
+*Defined in [App.ts:149](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L149)*
 
 Run database seed functions.
 
@@ -164,7 +164,7 @@ ___
 
 ▸ **stop**(): `Promise`<`void`>
 
-*Defined in [App.ts:71](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L71)*
+*Defined in [App.ts:71](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L71)*
 
 Stop the app. Disconnects the database and webserver.
 
@@ -177,7 +177,7 @@ ___
 
 ▸ **test**<`T`>(body: *`function`*, overrideConfig?: *`Partial`<[AppConfig](../interfaces/_appconfig_.appconfig.md)>*): `Promise`<`T`>
 
-*Defined in [App.ts:115](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L115)*
+*Defined in [App.ts:115](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L115)*
 
 Like `transaction`, but rolls back even if the body runs successfully.
 
@@ -200,7 +200,7 @@ ___
 
 ▸ **transaction**(body: *`function`*, overrideConfig?: *`Partial`<[AppConfig](../interfaces/_appconfig_.appconfig.md)>*): `Promise`<`void`>
 
-*Defined in [App.ts:93](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L93)*
+*Defined in [App.ts:93](https://github.com/jmeyers91/ts-app/blob/a37a505/src/App.ts#L93)*
 
 Start an app-level transaction. The passed function receives the transaction bound app. Optionally pass config overrides as the second argument. Returns a promise that resolves when the transaction body finishes running.
 

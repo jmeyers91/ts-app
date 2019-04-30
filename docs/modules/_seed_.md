@@ -18,7 +18,7 @@
 
 **Ƭ Seed**: *`function`*
 
-*Defined in [Seed.ts:6](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/Seed.ts#L6)*
+*Defined in [Seed.ts:6](https://github.com/jmeyers91/ts-app/blob/a37a505/src/Seed.ts#L6)*
 
 Database seed function.
 

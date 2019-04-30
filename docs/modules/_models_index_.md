@@ -18,7 +18,7 @@
 
 **models**: *`object`*
 
-*Defined in [models/index.ts:4](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/index.ts#L4)*
+*Defined in [models/index.ts:4](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/index.ts#L4)*
 
 <a id="models.user"></a>
 
@@ -26,7 +26,7 @@
 
 **● User**: *[User](../classes/_models_user_model_.user.md)*
 
-*Defined in [models/index.ts:5](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/models/index.ts#L5)*
+*Defined in [models/index.ts:5](https://github.com/jmeyers91/ts-app/blob/a37a505/src/models/index.ts#L5)*
 
 ___
 
