@@ -23,5 +23,5 @@ before_script:
   - npm run seed-tests
 
 script:
-  - npm run test -- --forceExit --detectOpenHandle
+  - npm run test -- --forceExit --detectOpenHandles
   - echo 'Finished running travis script.'
