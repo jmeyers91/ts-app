@@ -1,0 +1,13 @@
+language: nodejs
+node_js:
+  - '10'
+
+before_script:
+  - . $HOME/.nvm/nvm.sh
+  - nvm install
+  - nvm use
+  - npm install
+  - npm run build
+
+script:
+  - npm run test

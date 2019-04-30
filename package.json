@@ -1,0 +1,63 @@
+{
+  "name": "learn-jenkins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest",
+    "start": "scripts/start.sh",
+    "migrate": "scripts/migrate.sh",
+    "seed": "scripts/seed.sh",
+    "seed-test": "NODE_ENV=test scripts/seed.sh",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist",
+    "refresh": "scripts/refresh.sh",
+    "lint": "tslint --project tsconfig.json 'src/**/*.ts'",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "keywords": [],
+  "author": "James Meyers",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/dotenv": "^6.1.1",
+    "@types/jest": "^24.0.11",
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.2",
+    "@types/koa-router": "^7.0.40",
+    "axios": "^0.18.0",
+    "husky": "^2.1.0",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "plop": "^2.3.0",
+    "prettier": "^1.17.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "tslint": "^5.16.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^7.0.0",
+    "knex": "^0.16.5",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "objection": "^1.6.8",
+    "pg": "^7.10.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "tslint",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

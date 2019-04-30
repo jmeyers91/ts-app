@@ -1,0 +1,19 @@
+import Model from '../Model';
+
+export default class {{{properCase name}}} extends Model {
+  static tableName = '{{{snakeCase name}}}';
+
+  static jsonSchema = {
+    type: 'object',
+    required: ['email', 'password'],
+    properties: {
+      id: { type: 'integer' },
+    },
+  };
+
+  static relationMappings = {};
+
+  id!: number;
+  createdAt!: string;
+  updatedAt!: string;
+}
