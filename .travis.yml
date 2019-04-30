@@ -24,4 +24,3 @@ before_script:
 
 script:
   - npm run test -- --forceExit --detectOpenHandles
-  - echo 'Finished running travis script.'
