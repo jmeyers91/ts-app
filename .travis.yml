@@ -24,3 +24,4 @@ before_script:
 
 script:
   - npm run test
+  - echo 'Finished running travis script.'
