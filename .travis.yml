@@ -2,8 +2,8 @@ env:
   global:
     - PGPORT=5432
     - NODE_ENV=development
-    - DATABASE_URL=postgres://postgres:''@localhost:5432/travis_ci_test
-    - TEST_DATABASE_URL=postgres://postgres:''@localhost:5432/travis_ci_test
+    - DATABASE_URL="postgres://postgres:''@localhost:5432/travis_ci_test"
+    - TEST_DATABASE_URL="postgres://postgres:''@localhost:5432/travis_ci_test"
 
 language: nodejs
 node_js:
