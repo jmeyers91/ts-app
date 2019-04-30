@@ -1,13 +1,23 @@
+env:
+  - DATABASE_URL=postgres://postgres:''@localhost:5432/travis_ci_test
+  - TEST_DATABASE_URL=postgres://postgres:''@localhost:5432/travis_ci_test
+
 language: nodejs
 node_js:
   - '10'
 
+services:
+  - postgresql
+
 before_script:
   - . $HOME/.nvm/nvm.sh
+  - psql -c 'create database travis_ci_test;' -U postgres
   - nvm install
   - nvm use
   - npm install
   - npm run build
+  - npm run migrate
+  - npm run seed
 
 script:
   - npm run test
