@@ -19,8 +19,8 @@ before_script:
   - nvm use
   - npm install
   - npm run build
-  - npm run migrate
-  - npm run seed
+  - npm run migrate-tests
+  - npm run seed-tests
 
 script:
   - npm run test

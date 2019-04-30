@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test jest",
+    "migrate-tests": "NODE_ENV=test scripts/migrate.sh",
+    "seed-tests": "NODE_ENV=test scripts/seed.sh",
     "start": "scripts/start.sh",
     "migrate": "scripts/migrate.sh",
     "seed": "scripts/seed.sh",
