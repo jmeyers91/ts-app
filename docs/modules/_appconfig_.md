@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["AppConfig"](../modules/_appconfig_.md)
+[ts-app](../README.md) > ["AppConfig"](../modules/_appconfig_.md)
 
 # External module: "AppConfig"
 

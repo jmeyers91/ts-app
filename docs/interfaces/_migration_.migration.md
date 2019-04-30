@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["Migration"](../modules/_migration_.md) > [Migration](../interfaces/_migration_.migration.md)
+[ts-app](../README.md) > ["Migration"](../modules/_migration_.md) > [Migration](../interfaces/_migration_.migration.md)
 
 # Interface: Migration
 
@@ -30,7 +30,7 @@ A knex migration.
 
 **● config**: *`MigratorConfig`*
 
-*Defined in [Migration.ts:8](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/Migration.ts#L8)*
+*Defined in [Migration.ts:8](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/Migration.ts#L8)*
 
 ___
 <a id="name"></a>
@@ -39,7 +39,7 @@ ___
 
 **● name**: *`string`*
 
-*Defined in [Migration.ts:7](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/Migration.ts#L7)*
+*Defined in [Migration.ts:7](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/Migration.ts#L7)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **down**(knex: *`Knex`*): `any`
 
-*Defined in [Migration.ts:10](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/Migration.ts#L10)*
+*Defined in [Migration.ts:10](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/Migration.ts#L10)*
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **up**(knex: *`Knex`*): `any`
 
-*Defined in [Migration.ts:9](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/Migration.ts#L9)*
+*Defined in [Migration.ts:9](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/Migration.ts#L9)*
 
 **Parameters:**
 

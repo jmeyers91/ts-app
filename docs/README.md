@@ -55,6 +55,12 @@ npm run test
 plop
 ```
 
+### Generate documentation
+
+```
+npm run create-docs
+```
+
 ## Index
 
 ### External modules

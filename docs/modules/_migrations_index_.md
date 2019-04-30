@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["migrations/index"](../modules/_migrations_index_.md)
+[ts-app](../README.md) > ["migrations/index"](../modules/_migrations_index_.md)
 
 # External module: "migrations/index"
 
@@ -18,7 +18,7 @@
 
 **● migrations**: *[Migration](../interfaces/_migration_.migration.md)[]* =  [_20190428164519_create_user_table]
 
-*Defined in [migrations/index.ts:4](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/migrations/index.ts#L4)*
+*Defined in [migrations/index.ts:4](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/migrations/index.ts#L4)*
 
 ___
 

@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["App"](../modules/_app_.md)
+[ts-app](../README.md) > ["App"](../modules/_app_.md)
 
 # External module: "App"
 
@@ -22,7 +22,7 @@
 
 **Ƭ ModelIndex**: *`object` & `object`*
 
-*Defined in [App.ts:16](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/App.ts#L16)*
+*Defined in [App.ts:16](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/App.ts#L16)*
 
 Adds an index signature to `typeof models`.
 

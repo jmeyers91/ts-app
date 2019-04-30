@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["entries/start"](../modules/_entries_start_.md)
+[ts-app](../README.md) > ["entries/start"](../modules/_entries_start_.md)
 
 # External module: "entries/start"
 
@@ -18,7 +18,7 @@
 
 ▸ **main**(): `Promise`<`void`>
 
-*Defined in [entries/start.ts:5](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/entries/start.ts#L5)*
+*Defined in [entries/start.ts:5](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/entries/start.ts#L5)*
 
 **Returns:** `Promise`<`void`>
 

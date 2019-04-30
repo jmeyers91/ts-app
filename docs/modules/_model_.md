@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["Model"](../modules/_model_.md)
+[ts-app](../README.md) > ["Model"](../modules/_model_.md)
 
 # External module: "Model"
 

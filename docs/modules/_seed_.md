@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["Seed"](../modules/_seed_.md)
+[ts-app](../README.md) > ["Seed"](../modules/_seed_.md)
 
 # External module: "Seed"
 
@@ -18,7 +18,7 @@
 
 **Ƭ Seed**: *`function`*
 
-*Defined in [Seed.ts:6](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/Seed.ts#L6)*
+*Defined in [Seed.ts:6](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/Seed.ts#L6)*
 
 Database seed function.
 

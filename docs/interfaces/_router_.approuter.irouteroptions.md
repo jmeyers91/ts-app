@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["Router"](../modules/_router_.md) > [AppRouter](../classes/_router_.approuter.md) > [IRouterOptions](../interfaces/_router_.approuter.irouteroptions.md)
+[ts-app](../README.md) > ["Router"](../modules/_router_.md) > [AppRouter](../classes/_router_.approuter.md) > [IRouterOptions](../interfaces/_router_.approuter.irouteroptions.md)
 
 # Interface: IRouterOptions
 

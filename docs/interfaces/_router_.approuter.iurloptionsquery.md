@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["Router"](../modules/_router_.md) > [AppRouter](../classes/_router_.approuter.md) > [IUrlOptionsQuery](../interfaces/_router_.approuter.iurloptionsquery.md)
+[ts-app](../README.md) > ["Router"](../modules/_router_.md) > [AppRouter](../classes/_router_.approuter.md) > [IUrlOptionsQuery](../interfaces/_router_.approuter.iurloptionsquery.md)
 
 # Interface: IUrlOptionsQuery
 

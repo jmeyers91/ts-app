@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["utils/fail"](../modules/_utils_fail_.md)
+[ts-app](../README.md) > ["utils/fail"](../modules/_utils_fail_.md)
 
 # External module: "utils/fail"
 
@@ -18,7 +18,7 @@
 
 ▸ **fail**(message: *`string`*, status?: *`number`*): `never`
 
-*Defined in [utils/fail.ts:1](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/utils/fail.ts#L1)*
+*Defined in [utils/fail.ts:1](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/utils/fail.ts#L1)*
 
 **Parameters:**
 

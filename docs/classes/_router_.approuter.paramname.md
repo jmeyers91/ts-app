@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["Router"](../modules/_router_.md) > [AppRouter](../classes/_router_.approuter.md) > [ParamName](../classes/_router_.approuter.paramname.md)
+[ts-app](../README.md) > ["Router"](../modules/_router_.md) > [AppRouter](../classes/_router_.approuter.md) > [ParamName](../classes/_router_.approuter.paramname.md)
 
 # Class: ParamName
 

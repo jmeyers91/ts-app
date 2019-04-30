@@ -1,4 +1,4 @@
-[learn-jenkins](../README.md) > ["seeds/index"](../modules/_seeds_index_.md)
+[ts-app](../README.md) > ["seeds/index"](../modules/_seeds_index_.md)
 
 # External module: "seeds/index"
 
@@ -18,7 +18,7 @@
 
 **● seeds**: *[Seed](_seed_.md#seed)[]* =  [createUsers]
 
-*Defined in [seeds/index.ts:4](https://github.com/jmeyers91/ts-app/blob/2005cf1/src/seeds/index.ts#L4)*
+*Defined in [seeds/index.ts:4](https://github.com/jmeyers91/ts-app/blob/ae30f87/src/seeds/index.ts#L4)*
 
 ___
 
