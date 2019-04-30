@@ -23,5 +23,5 @@ before_script:
   - npm run seed-tests
 
 script:
-  - npm run test
+  - npm run test -- --forceExit
   - echo 'Finished running travis script.'
