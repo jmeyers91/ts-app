@@ -1,6 +1,8 @@
 import Koa from 'koa';
 import { Server as HttpServer } from 'http';
 import Knex, { Transaction } from 'knex';
+import koaHelmet from 'koa-helmet';
+import koaBodyparser from 'koa-bodyparser';
 import { migrateLatest, migrateRollback } from './utils/knexUtils';
 import AppConfig from './AppConfig';
 import Model from './Model';
@@ -56,6 +58,9 @@ export default class App {
   public async listen() {
     const api = new Router().prefix('/api');
 
+    // Add security headers
+    api.use(koaBodyparser());
+
     // Attach a reference to this instance to each request
     api.use(async (context, next) => {
       context.core = this;
@@ -72,6 +77,7 @@ export default class App {
       api.use(router.routes()).use(router.allowedMethods());
     }
 
+    this.webserver.use(koaHelmet());
     this.webserver.use(api.routes()).use(api.allowedMethods());
     this.httpServer = await new Promise(resolve =>
       this.webserver.listen(this.config.port, resolve),
