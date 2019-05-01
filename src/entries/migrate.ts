@@ -1,3 +1,7 @@
+/**
+ * Run database migrations.
+ */
+
 import App from '../App';
 import defaultConfig from '../defaultConfig';
 import { isTest } from '../env';

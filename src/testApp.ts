@@ -6,6 +6,9 @@ if (env.NODE_ENV !== 'test') {
   throw new Error(`NODE_ENV must equal 'test' during tests.`);
 }
 
+/**
+ * Test app instance. Do not use outside of tests!
+ */
 const app = new App(defaultConfig());
 
 beforeAll(async () => {

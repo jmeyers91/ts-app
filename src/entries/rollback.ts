@@ -1,3 +1,7 @@
+/**
+ * Roll back database migrations.
+ */
+
 import App from '../App';
 import defaultConfig from '../defaultConfig';
 

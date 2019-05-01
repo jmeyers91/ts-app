@@ -35,7 +35,7 @@ Knex migration source. Used to run knex migrations without the knex CLI.
 
 ⊕ **new MigrationSource**(knex: *`Knex`*, migrations: *[Migration](../interfaces/_migration_.migration.md)[]*): [MigrationSource](_utils_knexutils_.migrationsource.md)
 
-*Defined in [utils/knexUtils.ts:96](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L96)*
+*Defined in [utils/knexUtils.ts:96](https://github.com/jmeyers91/ts-app/blob/0a84084/src/utils/knexUtils.ts#L96)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ ___
 
 **● knex**: *`Knex`*
 
-*Defined in [utils/knexUtils.ts:98](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L98)*
+*Defined in [utils/knexUtils.ts:98](https://github.com/jmeyers91/ts-app/blob/0a84084/src/utils/knexUtils.ts#L98)*
 
 ___
 <a id="migrations"></a>
@@ -65,7 +65,7 @@ ___
 
 **● migrations**: *[Migration](../interfaces/_migration_.migration.md)[]*
 
-*Defined in [utils/knexUtils.ts:99](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L99)*
+*Defined in [utils/knexUtils.ts:99](https://github.com/jmeyers91/ts-app/blob/0a84084/src/utils/knexUtils.ts#L99)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **getMigration**(migration: *[Migration](../interfaces/_migration_.migration.md)*): `object`
 
-*Defined in [utils/knexUtils.ts:110](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L110)*
+*Defined in [utils/knexUtils.ts:110](https://github.com/jmeyers91/ts-app/blob/0a84084/src/utils/knexUtils.ts#L110)*
 
 **Parameters:**
 
@@ -94,7 +94,7 @@ ___
 
 ▸ **getMigrationName**(migration: *[Migration](../interfaces/_migration_.migration.md)*): `string`
 
-*Defined in [utils/knexUtils.ts:106](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L106)*
+*Defined in [utils/knexUtils.ts:106](https://github.com/jmeyers91/ts-app/blob/0a84084/src/utils/knexUtils.ts#L106)*
 
 **Parameters:**
 
@@ -111,7 +111,7 @@ ___
 
 ▸ **getMigrations**(): `Promise`<[Migration](../interfaces/_migration_.migration.md)[]>
 
-*Defined in [utils/knexUtils.ts:102](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/knexUtils.ts#L102)*
+*Defined in [utils/knexUtils.ts:102](https://github.com/jmeyers91/ts-app/blob/0a84084/src/utils/knexUtils.ts#L102)*
 
 **Returns:** `Promise`<[Migration](../interfaces/_migration_.migration.md)[]>
 

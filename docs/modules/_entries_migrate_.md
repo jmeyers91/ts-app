@@ -18,7 +18,7 @@
 
 ▸ **main**(): `Promise`<`void`>
 
-*Defined in [entries/migrate.ts:6](https://github.com/jmeyers91/ts-app/blob/a37a505/src/entries/migrate.ts#L6)*
+*Defined in [entries/migrate.ts:10](https://github.com/jmeyers91/ts-app/blob/0a84084/src/entries/migrate.ts#L10)*
 
 **Returns:** `Promise`<`void`>
 

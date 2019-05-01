@@ -18,9 +18,12 @@
 
 ▸ **defaultConfig**(): [AppConfig](../interfaces/_appconfig_.appconfig.md)
 
-*Defined in [defaultConfig.ts:12](https://github.com/jmeyers91/ts-app/blob/a37a505/src/defaultConfig.ts#L12)*
+*Defined in [defaultConfig.ts:17](https://github.com/jmeyers91/ts-app/blob/0a84084/src/defaultConfig.ts#L17)*
+
+Loads the default app config from the environment.
 
 **Returns:** [AppConfig](../interfaces/_appconfig_.appconfig.md)
+The default app config object.
 
 ___
 

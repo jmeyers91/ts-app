@@ -16,8 +16,22 @@ import routers from './routers';
 type ModelIndex = typeof models & { [key: string]: typeof Model };
 
 export default class App {
+  /**
+   * Koa webserver.
+   * See: https://koajs.com/
+   */
   public readonly webserver: Koa;
+
+  /**
+   * Knex SQL query builder.
+   * See: https://knexjs.org/
+   */
   public readonly database: Knex;
+
+  /**
+   * Objection models.
+   * See: http://vincit.github.io/objection.js/
+   */
   public readonly models: typeof models;
   private httpServer: HttpServer | null;
 
@@ -44,14 +58,13 @@ export default class App {
 
     // Attach a reference to this instance to each request
     api.use(async (context, next) => {
-      context.arp = this;
+      context.core = this;
 
       try {
         await next();
         console.log(context.response.status, context.request.path);
       } catch (error) {
         console.log(context.response.status, context.request.path, error.stack);
-        throw error;
       }
     });
 

@@ -9,6 +9,11 @@ import {
   TEST_PORT,
 } from './env';
 
+/**
+ * Loads the default app config from the environment.
+ *
+ * @returns The default app config object.
+ */
 export default function defaultConfig(): AppConfig {
   const port = parseInt(isTest ? TEST_PORT : PORT, 10);
   const databaseUrl = isTest ? TEST_DATABASE_URL : DATABASE_URL;

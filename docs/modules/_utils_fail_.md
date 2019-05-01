@@ -18,14 +18,16 @@
 
 ▸ **fail**(message: *`string`*, status?: *`number`*): `never`
 
-*Defined in [utils/fail.ts:1](https://github.com/jmeyers91/ts-app/blob/a37a505/src/utils/fail.ts#L1)*
+*Defined in [utils/fail.ts:7](https://github.com/jmeyers91/ts-app/blob/0a84084/src/utils/fail.ts#L7)*
+
+Throw an error with an optional http status code.
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| message | `string` | - |
-| `Default value` status | `number` | 400 |
+| Name | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| message | `string` | - |  The error message. |
+| `Default value` status | `number` | 400 |  The HTTP status code. |
 
 **Returns:** `never`
 

@@ -1,3 +1,7 @@
-import { Model } from 'objection';
+import { Model as ObjectionModel } from 'objection';
 
-export default Model;
+/**
+ * Objection model.
+ * See: http://vincit.github.io/objection.js/
+ */
+export default class Model extends ObjectionModel {}

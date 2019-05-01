@@ -1,4 +1,6 @@
 
+[![Build Status](https://travis-ci.com/jmeyers91/ts-app.svg?branch=master)](https://travis-ci.com/jmeyers91/ts-app)
+
 Setup
 =====
 

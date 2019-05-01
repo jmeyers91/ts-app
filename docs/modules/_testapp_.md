@@ -18,7 +18,9 @@
 
 **● app**: *[App](../classes/_app_.app.md)* =  new App(defaultConfig())
 
-*Defined in [testApp.ts:9](https://github.com/jmeyers91/ts-app/blob/a37a505/src/testApp.ts#L9)*
+*Defined in [testApp.ts:12](https://github.com/jmeyers91/ts-app/blob/0a84084/src/testApp.ts#L12)*
+
+Test app instance. Do not use outside of tests!
 
 ___
 

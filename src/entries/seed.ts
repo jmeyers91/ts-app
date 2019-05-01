@@ -1,3 +1,7 @@
+/**
+ * Run database seeds.
+ */
+
 import App from '../App';
 import defaultConfig from '../defaultConfig';
 import { isTest } from '../env';

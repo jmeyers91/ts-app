@@ -1,3 +1,7 @@
+/**
+ * Start the app and listen for requests.
+ */
+
 import App from '../App';
 import defaultConfig from '../defaultConfig';
 

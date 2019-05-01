@@ -1,8 +1,5 @@
-import Model from '../Model';
 import User from './User.model';
 
-const models = {
+export default {
   User,
 };
-
-export default models;

@@ -4,5 +4,9 @@
 
 ## Index
 
+### Classes
+
+* [Model](../classes/_model_.model.md)
+
 ---
 

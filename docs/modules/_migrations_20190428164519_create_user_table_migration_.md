@@ -18,7 +18,7 @@
 
 **migration**: *`object`*
 
-*Defined in [migrations/20190428164519_create_user_table.migration.ts:4](https://github.com/jmeyers91/ts-app/blob/a37a505/src/migrations/20190428164519_create_user_table.migration.ts#L4)*
+*Defined in [migrations/20190428164519_create_user_table.migration.ts:4](https://github.com/jmeyers91/ts-app/blob/0a84084/src/migrations/20190428164519_create_user_table.migration.ts#L4)*
 
 <a id="migration.down"></a>
 
@@ -26,7 +26,7 @@
 
 **● down**: *`function`* =  downTable('app_user')
 
-*Defined in [migrations/20190428164519_create_user_table.migration.ts:15](https://github.com/jmeyers91/ts-app/blob/a37a505/src/migrations/20190428164519_create_user_table.migration.ts#L15)*
+*Defined in [migrations/20190428164519_create_user_table.migration.ts:15](https://github.com/jmeyers91/ts-app/blob/0a84084/src/migrations/20190428164519_create_user_table.migration.ts#L15)*
 
 #### Type declaration
 ▸(knex: *`Knex`*): `Promise`<`void`>
@@ -46,7 +46,7 @@ ___
 
 **● name**: *`string`* = "20190428164519_create_user_table"
 
-*Defined in [migrations/20190428164519_create_user_table.migration.ts:5](https://github.com/jmeyers91/ts-app/blob/a37a505/src/migrations/20190428164519_create_user_table.migration.ts#L5)*
+*Defined in [migrations/20190428164519_create_user_table.migration.ts:5](https://github.com/jmeyers91/ts-app/blob/0a84084/src/migrations/20190428164519_create_user_table.migration.ts#L5)*
 
 ___
 <a id="migration.up"></a>
@@ -63,7 +63,7 @@ ___
     table.string('password').notNullable();
   })
 
-*Defined in [migrations/20190428164519_create_user_table.migration.ts:6](https://github.com/jmeyers91/ts-app/blob/a37a505/src/migrations/20190428164519_create_user_table.migration.ts#L6)*
+*Defined in [migrations/20190428164519_create_user_table.migration.ts:6](https://github.com/jmeyers91/ts-app/blob/0a84084/src/migrations/20190428164519_create_user_table.migration.ts#L6)*
 
 #### Type declaration
 ▸(knex: *`Knex`*): `Promise`<`void`>

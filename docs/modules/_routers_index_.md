@@ -18,7 +18,7 @@
 
 **● routers**: *`Router`[]* =  [userRouter]
 
-*Defined in [routers/index.ts:4](https://github.com/jmeyers91/ts-app/blob/a37a505/src/routers/index.ts#L4)*
+*Defined in [routers/index.ts:4](https://github.com/jmeyers91/ts-app/blob/0a84084/src/routers/index.ts#L4)*
 
 ___
 

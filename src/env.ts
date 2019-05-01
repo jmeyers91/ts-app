@@ -1,6 +1,10 @@
 import dotenv from 'dotenv';
 
 dotenv.config();
+
+/**
+ * `process.env` with defaults loaded from the `.env` file if it exists.
+ */
 const env = process.env;
 export default env;
 

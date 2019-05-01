@@ -10,19 +10,19 @@
 
 ### Properties
 
-* [arp](_router_.customcontext.md#arp)
+* [core](_router_.customcontext.md#core)
 
 ---
 
 ## Properties
 
-<a id="arp"></a>
+<a id="core"></a>
 
-###  arp
+###  core
 
-**● arp**: *[App](../classes/_app_.app.md)*
+**● core**: *[App](../classes/_app_.app.md)*
 
-*Defined in [Router.ts:5](https://github.com/jmeyers91/ts-app/blob/a37a505/src/Router.ts#L5)*
+*Defined in [Router.ts:5](https://github.com/jmeyers91/ts-app/blob/0a84084/src/Router.ts#L5)*
 
 ___
 

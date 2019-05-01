@@ -1,156 +1,107 @@
-[ts-app](../README.md) > ["models/User.model"](../modules/_models_user_model_.md) > [User](../classes/_models_user_model_.user.md)
+[ts-app](../README.md) > ["Model"](../modules/_model_.md) > [Model](../classes/_model_.model.md)
 
-# Class: User
+# Class: Model
+
+Objection model. See: [http://vincit.github.io/objection.js/](http://vincit.github.io/objection.js/)
 
 ## Hierarchy
 
-↳  [Model](_model_.model.md)
+ `Model`
 
-**↳ User**
+**↳ Model**
+
+↳  [User](_models_user_model_.user.md)
 
 ## Index
 
 ### Properties
 
-* [createdAt](_models_user_model_.user.md#createdat)
-* [email](_models_user_model_.user.md#email)
-* [id](_models_user_model_.user.md#id)
-* [password](_models_user_model_.user.md#password)
-* [updatedAt](_models_user_model_.user.md#updatedat)
-* [BelongsToOneRelation](_models_user_model_.user.md#belongstoonerelation)
-* [HasManyRelation](_models_user_model_.user.md#hasmanyrelation)
-* [HasOneRelation](_models_user_model_.user.md#hasonerelation)
-* [HasOneThroughRelation](_models_user_model_.user.md#hasonethroughrelation)
-* [JoinEagerAlgorithm](_models_user_model_.user.md#joineageralgorithm)
-* [ManyToManyRelation](_models_user_model_.user.md#manytomanyrelation)
-* [NaiveEagerAlgorithm](_models_user_model_.user.md#naiveeageralgorithm)
-* [QueryBuilder](_models_user_model_.user.md#querybuilder)
-* [WhereInEagerAlgorithm](_models_user_model_.user.md#whereineageralgorithm)
-* [columnNameMappers](_models_user_model_.user.md#columnnamemappers)
-* [dbRefProp](_models_user_model_.user.md#dbrefprop)
-* [defaultEagerAlgorithm](_models_user_model_.user.md#defaulteageralgorithm)
-* [defaultEagerOptions](_models_user_model_.user.md#defaulteageroptions)
-* [fn](_models_user_model_.user.md#fn)
-* [idColumn](_models_user_model_.user.md#idcolumn)
-* [jsonAttributes](_models_user_model_.user.md#jsonattributes)
-* [modelPaths](_models_user_model_.user.md#modelpaths)
-* [modifiers](_models_user_model_.user.md#modifiers)
-* [pickJsonSchemaProperties](_models_user_model_.user.md#pickjsonschemaproperties)
-* [propRefRegex](_models_user_model_.user.md#proprefregex)
-* [raw](_models_user_model_.user.md#raw)
-* [relatedFindQueryMutates](_models_user_model_.user.md#relatedfindquerymutates)
-* [relatedInsertQueryMutates](_models_user_model_.user.md#relatedinsertquerymutates)
-* [relationMappings](_models_user_model_.user.md#relationmappings)
-* [tableName](_models_user_model_.user.md#tablename)
-* [uidProp](_models_user_model_.user.md#uidprop)
-* [uidRefProp](_models_user_model_.user.md#uidrefprop)
-* [virtualAttributes](_models_user_model_.user.md#virtualattributes)
+* [BelongsToOneRelation](_model_.model.md#belongstoonerelation)
+* [HasManyRelation](_model_.model.md#hasmanyrelation)
+* [HasOneRelation](_model_.model.md#hasonerelation)
+* [HasOneThroughRelation](_model_.model.md#hasonethroughrelation)
+* [JoinEagerAlgorithm](_model_.model.md#joineageralgorithm)
+* [ManyToManyRelation](_model_.model.md#manytomanyrelation)
+* [NaiveEagerAlgorithm](_model_.model.md#naiveeageralgorithm)
+* [QueryBuilder](_model_.model.md#querybuilder)
+* [WhereInEagerAlgorithm](_model_.model.md#whereineageralgorithm)
+* [columnNameMappers](_model_.model.md#columnnamemappers)
+* [dbRefProp](_model_.model.md#dbrefprop)
+* [defaultEagerAlgorithm](_model_.model.md#defaulteageralgorithm)
+* [defaultEagerOptions](_model_.model.md#defaulteageroptions)
+* [fn](_model_.model.md#fn)
+* [idColumn](_model_.model.md#idcolumn)
+* [jsonAttributes](_model_.model.md#jsonattributes)
+* [jsonSchema](_model_.model.md#jsonschema)
+* [modelPaths](_model_.model.md#modelpaths)
+* [modifiers](_model_.model.md#modifiers)
+* [pickJsonSchemaProperties](_model_.model.md#pickjsonschemaproperties)
+* [propRefRegex](_model_.model.md#proprefregex)
+* [raw](_model_.model.md#raw)
+* [relatedFindQueryMutates](_model_.model.md#relatedfindquerymutates)
+* [relatedInsertQueryMutates](_model_.model.md#relatedinsertquerymutates)
+* [relationMappings](_model_.model.md#relationmappings)
+* [tableName](_model_.model.md#tablename)
+* [uidProp](_model_.model.md#uidprop)
+* [uidRefProp](_model_.model.md#uidrefprop)
+* [virtualAttributes](_model_.model.md#virtualattributes)
 
 ### Methods
 
-* [$afterDelete](_models_user_model_.user.md#_afterdelete)
-* [$afterGet](_models_user_model_.user.md#_afterget)
-* [$afterInsert](_models_user_model_.user.md#_afterinsert)
-* [$afterUpdate](_models_user_model_.user.md#_afterupdate)
-* [$afterValidate](_models_user_model_.user.md#_aftervalidate)
-* [$appendRelated](_models_user_model_.user.md#_appendrelated)
-* [$beforeDelete](_models_user_model_.user.md#_beforedelete)
-* [$beforeInsert](_models_user_model_.user.md#_beforeinsert)
-* [$beforeUpdate](_models_user_model_.user.md#_beforeupdate)
-* [$beforeValidate](_models_user_model_.user.md#_beforevalidate)
-* [$clone](_models_user_model_.user.md#_clone)
-* [$formatDatabaseJson](_models_user_model_.user.md#_formatdatabasejson)
-* [$formatJson](_models_user_model_.user.md#_formatjson)
-* [$id](_models_user_model_.user.md#_id)
-* [$knex](_models_user_model_.user.md#_knex)
-* [$loadRelated](_models_user_model_.user.md#_loadrelated)
-* [$omit](_models_user_model_.user.md#_omit)
-* [$parseDatabaseJson](_models_user_model_.user.md#_parsedatabasejson)
-* [$parseJson](_models_user_model_.user.md#_parsejson)
-* [$pick](_models_user_model_.user.md#_pick)
-* [$query](_models_user_model_.user.md#_query)
-* [$relatedQuery](_models_user_model_.user.md#_relatedquery)
-* [$set](_models_user_model_.user.md#_set)
-* [$setDatabaseJson](_models_user_model_.user.md#_setdatabasejson)
-* [$setJson](_models_user_model_.user.md#_setjson)
-* [$setRelated](_models_user_model_.user.md#_setrelated)
-* [$toDatabaseJson](_models_user_model_.user.md#_todatabasejson)
-* [$toJson](_models_user_model_.user.md#_tojson)
-* [$transaction](_models_user_model_.user.md#_transaction)
-* [$traverse](_models_user_model_.user.md#_traverse)
-* [$validate](_models_user_model_.user.md#_validate)
-* [toJSON](_models_user_model_.user.md#tojson)
-* [bindKnex](_models_user_model_.user.md#bindknex)
-* [bindTransaction](_models_user_model_.user.md#bindtransaction)
-* [createNotFoundError](_models_user_model_.user.md#createnotfounderror)
-* [createValidationError](_models_user_model_.user.md#createvalidationerror)
-* [createValidator](_models_user_model_.user.md#createvalidator)
-* [fetchTableMetadata](_models_user_model_.user.md#fetchtablemetadata)
-* [fromDatabaseJson](_models_user_model_.user.md#fromdatabasejson)
-* [fromJson](_models_user_model_.user.md#fromjson)
-* [getRelations](_models_user_model_.user.md#getrelations)
-* [knex](_models_user_model_.user.md#knex)
-* [knexQuery](_models_user_model_.user.md#knexquery)
-* [loadRelated](_models_user_model_.user.md#loadrelated)
-* [omitImpl](_models_user_model_.user.md#omitimpl)
-* [query](_models_user_model_.user.md#query)
-* [relatedQuery](_models_user_model_.user.md#relatedquery)
-* [tableMetadata](_models_user_model_.user.md#tablemetadata)
-* [traverse](_models_user_model_.user.md#traverse)
-
-### Object literals
-
-* [jsonSchema](_models_user_model_.user.md#jsonschema)
+* [$afterDelete](_model_.model.md#_afterdelete)
+* [$afterGet](_model_.model.md#_afterget)
+* [$afterInsert](_model_.model.md#_afterinsert)
+* [$afterUpdate](_model_.model.md#_afterupdate)
+* [$afterValidate](_model_.model.md#_aftervalidate)
+* [$appendRelated](_model_.model.md#_appendrelated)
+* [$beforeDelete](_model_.model.md#_beforedelete)
+* [$beforeInsert](_model_.model.md#_beforeinsert)
+* [$beforeUpdate](_model_.model.md#_beforeupdate)
+* [$beforeValidate](_model_.model.md#_beforevalidate)
+* [$clone](_model_.model.md#_clone)
+* [$formatDatabaseJson](_model_.model.md#_formatdatabasejson)
+* [$formatJson](_model_.model.md#_formatjson)
+* [$id](_model_.model.md#_id)
+* [$knex](_model_.model.md#_knex)
+* [$loadRelated](_model_.model.md#_loadrelated)
+* [$omit](_model_.model.md#_omit)
+* [$parseDatabaseJson](_model_.model.md#_parsedatabasejson)
+* [$parseJson](_model_.model.md#_parsejson)
+* [$pick](_model_.model.md#_pick)
+* [$query](_model_.model.md#_query)
+* [$relatedQuery](_model_.model.md#_relatedquery)
+* [$set](_model_.model.md#_set)
+* [$setDatabaseJson](_model_.model.md#_setdatabasejson)
+* [$setJson](_model_.model.md#_setjson)
+* [$setRelated](_model_.model.md#_setrelated)
+* [$toDatabaseJson](_model_.model.md#_todatabasejson)
+* [$toJson](_model_.model.md#_tojson)
+* [$transaction](_model_.model.md#_transaction)
+* [$traverse](_model_.model.md#_traverse)
+* [$validate](_model_.model.md#_validate)
+* [toJSON](_model_.model.md#tojson)
+* [bindKnex](_model_.model.md#bindknex)
+* [bindTransaction](_model_.model.md#bindtransaction)
+* [createNotFoundError](_model_.model.md#createnotfounderror)
+* [createValidationError](_model_.model.md#createvalidationerror)
+* [createValidator](_model_.model.md#createvalidator)
+* [fetchTableMetadata](_model_.model.md#fetchtablemetadata)
+* [fromDatabaseJson](_model_.model.md#fromdatabasejson)
+* [fromJson](_model_.model.md#fromjson)
+* [getRelations](_model_.model.md#getrelations)
+* [knex](_model_.model.md#knex)
+* [knexQuery](_model_.model.md#knexquery)
+* [loadRelated](_model_.model.md#loadrelated)
+* [omitImpl](_model_.model.md#omitimpl)
+* [query](_model_.model.md#query)
+* [relatedQuery](_model_.model.md#relatedquery)
+* [tableMetadata](_model_.model.md#tablemetadata)
+* [traverse](_model_.model.md#traverse)
 
 ---
 
 ## Properties
 
-<a id="createdat"></a>
-
-###  createdAt
-
-**● createdAt**: *`string`*
-
-*Defined in [models/User.model.ts:21](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L21)*
-
-___
-<a id="email"></a>
-
-###  email
-
-**● email**: *`string`*
-
-*Defined in [models/User.model.ts:19](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L19)*
-
-___
-<a id="id"></a>
-
-###  id
-
-**● id**: *`number`*
-
-*Defined in [models/User.model.ts:18](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L18)*
-
-___
-<a id="password"></a>
-
-###  password
-
-**● password**: *`string`*
-
-*Defined in [models/User.model.ts:20](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L20)*
-
-___
-<a id="updatedat"></a>
-
-###  updatedAt
-
-**● updatedAt**: *`string`*
-
-*Defined in [models/User.model.ts:22](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L22)*
-
-___
 <a id="belongstoonerelation"></a>
 
 ### `<Static>` BelongsToOneRelation
@@ -327,6 +278,17 @@ ___
 *Defined in /Users/james/projects/ts-app/node_modules/objection/typings/objection/index.d.ts:490*
 
 ___
+<a id="jsonschema"></a>
+
+### `<Static>` jsonSchema
+
+**● jsonSchema**: *`JsonSchema`*
+
+*Inherited from Model.jsonSchema*
+
+*Defined in /Users/james/projects/ts-app/node_modules/objection/typings/objection/index.d.ts:486*
+
+___
 <a id="modelpaths"></a>
 
 ### `<Static>` modelPaths
@@ -408,24 +370,22 @@ ___
 
 ### `<Static>` relationMappings
 
-**● relationMappings**: *`object`*
+**● relationMappings**: *`RelationMappings` \| `function`*
 
-*Overrides Model.relationMappings*
+*Inherited from Model.relationMappings*
 
-*Defined in [models/User.model.ts:16](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L16)*
-
-#### Type declaration
+*Defined in /Users/james/projects/ts-app/node_modules/objection/typings/objection/index.d.ts:489*
 
 ___
 <a id="tablename"></a>
 
 ### `<Static>` tableName
 
-**● tableName**: *`string`* = "app_user"
+**● tableName**: *`string`*
 
-*Overrides Model.tableName*
+*Inherited from Model.tableName*
 
-*Defined in [models/User.model.ts:4](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L4)*
+*Defined in /Users/james/projects/ts-app/node_modules/objection/typings/objection/index.d.ts:485*
 
 ___
 <a id="uidprop"></a>
@@ -757,20 +717,20 @@ ___
 
 ###  $knex
 
-▸ **$knex**(): [knex](_models_user_model_.user.md#knex)
+▸ **$knex**(): [knex](_model_.model.md#knex)
 
 *Inherited from Model.$knex*
 
 *Defined in /Users/james/projects/ts-app/node_modules/objection/typings/objection/index.d.ts:639*
 
-**Returns:** [knex](_models_user_model_.user.md#knex)
+**Returns:** [knex](_model_.model.md#knex)
 
 ___
 <a id="_loadrelated"></a>
 
 ###  $loadRelated
 
-▸ **$loadRelated**<`QM`>(this: *`QM`*, expression: *`keyof this` \| `RelationExpression`*, filters?: *`Filters`<`QM`>*, trxOrKnex?: *`Transaction` \| [knex](_models_user_model_.user.md#knex)*): `QueryBuilder`<`QM`, `QM`>
+▸ **$loadRelated**<`QM`>(this: *`QM`*, expression: *`keyof this` \| `RelationExpression`*, filters?: *`Filters`<`QM`>*, trxOrKnex?: *`Transaction` \| [knex](_model_.model.md#knex)*): `QueryBuilder`<`QM`, `QM`>
 
 *Inherited from Model.$loadRelated*
 
@@ -786,7 +746,7 @@ ___
 | this | `QM` |
 | expression | `keyof this` \| `RelationExpression` |
 | `Optional` filters | `Filters`<`QM`> |
-| `Optional` trxOrKnex | `Transaction` \| [knex](_models_user_model_.user.md#knex) |
+| `Optional` trxOrKnex | `Transaction` \| [knex](_model_.model.md#knex) |
 
 **Returns:** `QueryBuilder`<`QM`, `QM`>
 
@@ -880,7 +840,7 @@ ___
 
 ###  $query
 
-▸ **$query**<`QM`>(this: *`QM`*, trxOrKnex?: *`Transaction` \| [knex](_models_user_model_.user.md#knex)*): `QueryBuilder`<`QM`, `QM`>
+▸ **$query**<`QM`>(this: *`QM`*, trxOrKnex?: *`Transaction` \| [knex](_model_.model.md#knex)*): `QueryBuilder`<`QM`, `QM`>
 
 *Inherited from Model.$query*
 
@@ -894,7 +854,7 @@ ___
 | Name | Type |
 | ------ | ------ |
 | this | `QM` |
-| `Optional` trxOrKnex | `Transaction` \| [knex](_models_user_model_.user.md#knex) |
+| `Optional` trxOrKnex | `Transaction` \| [knex](_model_.model.md#knex) |
 
 **Returns:** `QueryBuilder`<`QM`, `QM`>
 
@@ -903,9 +863,9 @@ ___
 
 ###  $relatedQuery
 
-▸ **$relatedQuery**<`K`,`V`>(relationName: *`K`*, trxOrKnex?: *`Transaction` \| [knex](_models_user_model_.user.md#knex)*): `QueryBuilder`<`V`, `V`, `V`>
+▸ **$relatedQuery**<`K`,`V`>(relationName: *`K`*, trxOrKnex?: *`Transaction` \| [knex](_model_.model.md#knex)*): `QueryBuilder`<`V`, `V`, `V`>
 
-▸ **$relatedQuery**<`QM`,`RM`>(relationName: *`keyof this` \| `string`*, trxOrKnex?: *`Transaction` \| [knex](_models_user_model_.user.md#knex)*): `QueryBuilder`<`QM`, `RM`>
+▸ **$relatedQuery**<`QM`,`RM`>(relationName: *`keyof this` \| `string`*, trxOrKnex?: *`Transaction` \| [knex](_model_.model.md#knex)*): `QueryBuilder`<`QM`, `RM`>
 
 *Inherited from Model.$relatedQuery*
 
@@ -924,7 +884,7 @@ Note that if you make any chained calls to the QueryBuilder, though, you should 
 | Name | Type |
 | ------ | ------ |
 | relationName | `K` |
-| `Optional` trxOrKnex | `Transaction` \| [knex](_models_user_model_.user.md#knex) |
+| `Optional` trxOrKnex | `Transaction` \| [knex](_model_.model.md#knex) |
 
 **Returns:** `QueryBuilder`<`V`, `V`, `V`>
 
@@ -943,7 +903,7 @@ Builds a query that only affects the models related to this instance through a r
 | Name | Type |
 | ------ | ------ |
 | relationName | `keyof this` \| `string` |
-| `Optional` trxOrKnex | `Transaction` \| [knex](_models_user_model_.user.md#knex) |
+| `Optional` trxOrKnex | `Transaction` \| [knex](_model_.model.md#knex) |
 
 **Returns:** `QueryBuilder`<`QM`, `RM`>
 
@@ -1079,13 +1039,13 @@ ___
 
 ###  $transaction
 
-▸ **$transaction**(): [knex](_models_user_model_.user.md#knex)
+▸ **$transaction**(): [knex](_model_.model.md#knex)
 
 *Inherited from Model.$transaction*
 
 *Defined in /Users/james/projects/ts-app/node_modules/objection/typings/objection/index.d.ts:640*
 
-**Returns:** [knex](_models_user_model_.user.md#knex)
+**Returns:** [knex](_model_.model.md#knex)
 
 ___
 <a id="_traverse"></a>
@@ -1367,9 +1327,9 @@ ___
 
 ### `<Static>` loadRelated
 
-▸ **loadRelated**<`QM`>(this: *`Constructor`<`QM`>*, models: *`QM`[]*, expression: *`RelationExpression`*, filters?: *`Filters`<`QM`>*, trxOrKnex?: *`Transaction` \| [knex](_models_user_model_.user.md#knex)*): `QueryBuilder`<`QM`>
+▸ **loadRelated**<`QM`>(this: *`Constructor`<`QM`>*, models: *`QM`[]*, expression: *`RelationExpression`*, filters?: *`Filters`<`QM`>*, trxOrKnex?: *`Transaction` \| [knex](_model_.model.md#knex)*): `QueryBuilder`<`QM`>
 
-▸ **loadRelated**<`QM`>(this: *`Constructor`<`QM`>*, model: *`QM`*, expression: *`RelationExpression`*, filters?: *`Filters`<`QM`>*, trxOrKnex?: *`Transaction` \| [knex](_models_user_model_.user.md#knex)*): `QueryBuilderYieldingOne`<`QM`>
+▸ **loadRelated**<`QM`>(this: *`Constructor`<`QM`>*, model: *`QM`*, expression: *`RelationExpression`*, filters?: *`Filters`<`QM`>*, trxOrKnex?: *`Transaction` \| [knex](_model_.model.md#knex)*): `QueryBuilderYieldingOne`<`QM`>
 
 *Inherited from Model.loadRelated*
 
@@ -1386,7 +1346,7 @@ ___
 | models | `QM`[] |
 | expression | `RelationExpression` |
 | `Optional` filters | `Filters`<`QM`> |
-| `Optional` trxOrKnex | `Transaction` \| [knex](_models_user_model_.user.md#knex) |
+| `Optional` trxOrKnex | `Transaction` \| [knex](_model_.model.md#knex) |
 
 **Returns:** `QueryBuilder`<`QM`>
 
@@ -1405,7 +1365,7 @@ ___
 | model | `QM` |
 | expression | `RelationExpression` |
 | `Optional` filters | `Filters`<`QM`> |
-| `Optional` trxOrKnex | `Transaction` \| [knex](_models_user_model_.user.md#knex) |
+| `Optional` trxOrKnex | `Transaction` \| [knex](_model_.model.md#knex) |
 
 **Returns:** `QueryBuilderYieldingOne`<`QM`>
 
@@ -1433,7 +1393,7 @@ ___
 
 ### `<Static>` query
 
-▸ **query**<`QM`>(this: *`Constructor`<`QM`>*, trxOrKnex?: *`Transaction` \| [knex](_models_user_model_.user.md#knex)*): `QueryBuilder`<`QM`>
+▸ **query**<`QM`>(this: *`Constructor`<`QM`>*, trxOrKnex?: *`Transaction` \| [knex](_model_.model.md#knex)*): `QueryBuilder`<`QM`>
 
 *Inherited from Model.query*
 
@@ -1447,7 +1407,7 @@ ___
 | Name | Type |
 | ------ | ------ |
 | this | `Constructor`<`QM`> |
-| `Optional` trxOrKnex | `Transaction` \| [knex](_models_user_model_.user.md#knex) |
+| `Optional` trxOrKnex | `Transaction` \| [knex](_model_.model.md#knex) |
 
 **Returns:** `QueryBuilder`<`QM`>
 
@@ -1524,106 +1484,6 @@ ___
 | traverser | `TraverserFunction` |
 
 **Returns:** `void`
-
-___
-
-## Object literals
-
-<a id="jsonschema"></a>
-
-### `<Static>` jsonSchema
-
-**jsonSchema**: *`object`*
-
-*Overrides Model.jsonSchema*
-
-*Defined in [models/User.model.ts:6](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L6)*
-
-<a id="jsonschema.required"></a>
-
-####  required
-
-**● required**: *`string`[]* =  ['email', 'password']
-
-*Defined in [models/User.model.ts:8](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L8)*
-
-___
-<a id="jsonschema.type"></a>
-
-####  type
-
-**● type**: *`string`* = "object"
-
-*Defined in [models/User.model.ts:7](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L7)*
-
-___
-<a id="jsonschema.properties"></a>
-
-####  properties
-
-**properties**: *`object`*
-
-*Defined in [models/User.model.ts:9](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L9)*
-
-<a id="jsonschema.properties.email-1"></a>
-
-####  email
-
-**email**: *`object`*
-
-*Defined in [models/User.model.ts:11](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L11)*
-
-<a id="jsonschema.properties.email-1.type-1"></a>
-
-####  type
-
-**● type**: *`string`* = "string"
-
-*Defined in [models/User.model.ts:11](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L11)*
-
-___
-
-___
-<a id="jsonschema.properties.id-1"></a>
-
-####  id
-
-**id**: *`object`*
-
-*Defined in [models/User.model.ts:10](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L10)*
-
-<a id="jsonschema.properties.id-1.type-2"></a>
-
-####  type
-
-**● type**: *`string`* = "integer"
-
-*Defined in [models/User.model.ts:10](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L10)*
-
-___
-
-___
-<a id="jsonschema.properties.password-1"></a>
-
-####  password
-
-**password**: *`object`*
-
-*Defined in [models/User.model.ts:12](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L12)*
-
-<a id="jsonschema.properties.password-1.type-3"></a>
-
-####  type
-
-**● type**: *`string`* = "string"
-
-*Defined in [models/User.model.ts:12](https://github.com/jmeyers91/ts-app/blob/0a84084/src/models/User.model.ts#L12)*
-
-___
-
-___
-
-___
 
 ___
 

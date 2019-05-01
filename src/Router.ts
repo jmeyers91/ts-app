@@ -2,7 +2,7 @@ import KoaRouter from 'koa-router';
 import App from './App';
 
 interface CustomContext {
-  arp: App;
+  core: App;
 }
 
 interface CustomState {}
