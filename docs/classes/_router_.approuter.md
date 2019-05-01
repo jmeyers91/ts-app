@@ -2,9 +2,11 @@
 
 # Class: AppRouter
 
+Koa router See: [https://github.com/ZijianHe/koa-router](https://github.com/ZijianHe/koa-router)
+
 ## Hierarchy
 
- `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+ `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 **↳ AppRouter**
 
@@ -144,13 +146,13 @@ ___
 
 ###  all
 
-▸ **all**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **all**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **all**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **all**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **all**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **all**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **all**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **all**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.all*
 
@@ -164,9 +166,9 @@ Register route with all methods.
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.all*
 
@@ -177,9 +179,9 @@ Register route with all methods.
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.all*
 
@@ -196,9 +198,9 @@ Register route with all methods.
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.all*
 
@@ -214,16 +216,16 @@ Register route with all methods.
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="allowedmethods"></a>
 
 ###  allowedMethods
 
-▸ **allowedMethods**(options?: *`Router.IRouterAllowedMethodsOptions`*): `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **allowedMethods**(options?: *`Router.IRouterAllowedMethodsOptions`*): `Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.allowedMethods*
 
@@ -237,20 +239,20 @@ Returns separate middleware for responding to `OPTIONS` requests with an `Allow`
 | ------ | ------ |
 | `Optional` options | `Router.IRouterAllowedMethodsOptions` |
 
-**Returns:** `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 ___
 <a id="del"></a>
 
 ###  del
 
-▸ **del**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **del**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **del**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **del**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **del**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **del**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **del**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **del**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.del*
 
@@ -264,9 +266,9 @@ Alias for `router.delete()` because delete is a reserved word
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.del*
 
@@ -277,9 +279,9 @@ Alias for `router.delete()` because delete is a reserved word
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.del*
 
@@ -296,9 +298,9 @@ Alias for `router.delete()` because delete is a reserved word
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.del*
 
@@ -314,22 +316,22 @@ Alias for `router.delete()` because delete is a reserved word
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="delete"></a>
 
 ###  delete
 
-▸ **delete**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **delete**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **delete**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **delete**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **delete**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **delete**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **delete**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **delete**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.delete*
 
@@ -343,9 +345,9 @@ HTTP delete method
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.delete*
 
@@ -356,9 +358,9 @@ HTTP delete method
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.delete*
 
@@ -375,9 +377,9 @@ HTTP delete method
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.delete*
 
@@ -393,22 +395,22 @@ HTTP delete method
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="get"></a>
 
 ###  get
 
-▸ **get**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **get**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **get**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **get**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **get**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **get**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **get**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **get**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.get*
 
@@ -422,9 +424,9 @@ HTTP get method
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.get*
 
@@ -435,9 +437,9 @@ HTTP get method
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.get*
 
@@ -454,9 +456,9 @@ HTTP get method
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.get*
 
@@ -472,22 +474,22 @@ HTTP get method
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="head"></a>
 
 ###  head
 
-▸ **head**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **head**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **head**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **head**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **head**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **head**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **head**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **head**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.head*
 
@@ -501,9 +503,9 @@ HTTP head method
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.head*
 
@@ -514,9 +516,9 @@ HTTP head method
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.head*
 
@@ -533,9 +535,9 @@ HTTP head method
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.head*
 
@@ -551,22 +553,22 @@ HTTP head method
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="link"></a>
 
 ###  link
 
-▸ **link**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **link**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **link**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **link**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **link**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **link**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **link**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **link**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.link*
 
@@ -580,9 +582,9 @@ HTTP link method
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.link*
 
@@ -593,9 +595,9 @@ HTTP link method
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.link*
 
@@ -612,9 +614,9 @@ HTTP link method
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.link*
 
@@ -630,9 +632,9 @@ HTTP link method
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="match"></a>
@@ -661,7 +663,7 @@ ___
 
 ###  middleware
 
-▸ **middleware**(): `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **middleware**(): `Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.middleware*
 
@@ -669,20 +671,20 @@ ___
 
 Returns router middleware which dispatches a route matching the request.
 
-**Returns:** `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 ___
 <a id="options"></a>
 
 ###  options
 
-▸ **options**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **options**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **options**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **options**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **options**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **options**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **options**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **options**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.options*
 
@@ -696,9 +698,9 @@ HTTP options method
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.options*
 
@@ -709,9 +711,9 @@ HTTP options method
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.options*
 
@@ -728,9 +730,9 @@ HTTP options method
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.options*
 
@@ -746,16 +748,16 @@ HTTP options method
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="param"></a>
 
 ###  param
 
-▸ **param**(param: *`string`*, middleware: *`IParamMiddleware`*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **param**(param: *`string`*, middleware: *`IParamMiddleware`*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.param*
 
@@ -770,20 +772,20 @@ Run middleware for named route parameters. Useful for auto-loading or validation
 | param | `string` |
 | middleware | `IParamMiddleware` |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 ___
 <a id="patch"></a>
 
 ###  patch
 
-▸ **patch**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **patch**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **patch**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **patch**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **patch**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **patch**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **patch**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **patch**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.patch*
 
@@ -797,9 +799,9 @@ HTTP path method
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.patch*
 
@@ -810,9 +812,9 @@ HTTP path method
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.patch*
 
@@ -829,9 +831,9 @@ HTTP path method
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.patch*
 
@@ -847,22 +849,22 @@ HTTP path method
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="post"></a>
 
 ###  post
 
-▸ **post**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **post**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **post**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **post**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **post**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **post**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **post**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **post**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.post*
 
@@ -876,9 +878,9 @@ HTTP post method
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.post*
 
@@ -889,9 +891,9 @@ HTTP post method
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.post*
 
@@ -908,9 +910,9 @@ HTTP post method
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.post*
 
@@ -926,16 +928,16 @@ HTTP post method
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="prefix"></a>
 
 ###  prefix
 
-▸ **prefix**(prefix: *`string`*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **prefix**(prefix: *`string`*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.prefix*
 
@@ -949,20 +951,20 @@ Set the path prefix for a Router instance that was already initialized.
 | ------ | ------ |
 | prefix | `string` |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 ___
 <a id="put"></a>
 
 ###  put
 
-▸ **put**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **put**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **put**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **put**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **put**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **put**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **put**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **put**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.put*
 
@@ -976,9 +978,9 @@ HTTP put method
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.put*
 
@@ -989,9 +991,9 @@ HTTP put method
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.put*
 
@@ -1008,9 +1010,9 @@ HTTP put method
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.put*
 
@@ -1026,16 +1028,16 @@ HTTP put method
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="redirect"></a>
 
 ###  redirect
 
-▸ **redirect**(source: *`string`*, destination: *`string`*, code?: *`undefined` \| `number`*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **redirect**(source: *`string`*, destination: *`string`*, code?: *`undefined` \| `number`*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.redirect*
 
@@ -1053,14 +1055,14 @@ Both `source` and `destination` can be route names.
 | destination | `string` |
 | `Optional` code | `undefined` \| `number` |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 ___
 <a id="register"></a>
 
 ###  register
 
-▸ **register**(path: *`string` \| `RegExp`*, methods: *`string`[]*, middleware: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>*, opts?: *`Object`*): `Layer`
+▸ **register**(path: *`string` \| `RegExp`*, methods: *`string`[]*, middleware: *`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>*, opts?: *`Object`*): `Layer`
 
 *Inherited from Router.register*
 
@@ -1074,7 +1076,7 @@ Create and register a route.
 | ------ | ------ |
 | path | `string` \| `RegExp` |
 | methods | `string`[] |
-| middleware | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)> |
+| middleware | `Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)> |
 | `Optional` opts | `Object` |
 
 **Returns:** `Layer`
@@ -1119,7 +1121,7 @@ ___
 
 ###  routes
 
-▸ **routes**(): `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **routes**(): `Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.routes*
 
@@ -1127,20 +1129,20 @@ ___
 
 Returns router middleware which dispatches a route matching the request.
 
-**Returns:** `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 ___
 <a id="unlink"></a>
 
 ###  unlink
 
-▸ **unlink**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **unlink**(name: *`string`*, path: *`string` \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **unlink**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **unlink**(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **unlink**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **unlink**<`T`,`U`>(name: *`string`*, path: *`string` \| `RegExp`*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
-▸ **unlink**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>*): `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+▸ **unlink**<`T`,`U`>(path: *`string` \| `RegExp` \| (`string` \| `RegExp`)[]*, middleware: *`Koa.Middleware`<`T`, `U`>*, routeHandler: *`Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>*): `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.unlink*
 
@@ -1154,9 +1156,9 @@ HTTP unlink method
 | ------ | ------ |
 | name | `string` |
 | path | `string` \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.unlink*
 
@@ -1167,9 +1169,9 @@ HTTP unlink method
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.unlink*
 
@@ -1186,9 +1188,9 @@ HTTP unlink method
 | name | `string` |
 | path | `string` \| `RegExp` |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 *Inherited from Router.unlink*
 
@@ -1204,9 +1206,9 @@ HTTP unlink method
 | ------ | ------ |
 | path | `string` \| `RegExp` \| (`string` \| `RegExp`)[] |
 | middleware | `Koa.Middleware`<`T`, `U`> |
-| routeHandler | `Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`> |
+| routeHandler | `Router.IMiddleware`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md) & `T`, [CustomContext](../interfaces/_router_.customcontext.md) & `U`>
+**Returns:** `Router`<`__type` & `T`, [CustomContext](../interfaces/_app_.customcontext.md) & `U`>
 
 ___
 <a id="url"></a>
@@ -1262,9 +1264,9 @@ ___
 
 ###  use
 
-▸ **use**(...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **use**(...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
-▸ **use**(path: *`string` \| `string`[] \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>>*): `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+▸ **use**(path: *`string` \| `string`[] \| `RegExp`*, ...middleware: *`Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>>*): `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.use*
 
@@ -1278,9 +1280,9 @@ Middleware run in the order they are defined by `.use()`. They are invoked seque
 
 | Name | Type |
 | ------ | ------ |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 *Inherited from Router.use*
 
@@ -1291,9 +1293,9 @@ Middleware run in the order they are defined by `.use()`. They are invoked seque
 | Name | Type |
 | ------ | ------ |
 | path | `string` \| `string`[] \| `RegExp` |
-| `Rest` middleware | `Array`<`Router.IMiddleware`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>> |
+| `Rest` middleware | `Array`<`Router.IMiddleware`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>> |
 
-**Returns:** `Router`<[CustomState](../interfaces/_router_.customstate.md), [CustomContext](../interfaces/_router_.customcontext.md)>
+**Returns:** `Router`<`__type`, [CustomContext](../interfaces/_app_.customcontext.md)>
 
 ___
 <a id="url-1"></a>

@@ -30,7 +30,7 @@ A knex migration.
 
 **● config**: *`MigratorConfig`*
 
-*Defined in [Migration.ts:11](https://github.com/jmeyers91/ts-app/blob/0a84084/src/Migration.ts#L11)*
+*Defined in [Migration.ts:11](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/Migration.ts#L11)*
 
 ___
 <a id="name"></a>
@@ -39,7 +39,7 @@ ___
 
 **● name**: *`string`*
 
-*Defined in [Migration.ts:10](https://github.com/jmeyers91/ts-app/blob/0a84084/src/Migration.ts#L10)*
+*Defined in [Migration.ts:10](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/Migration.ts#L10)*
 
 Migration name. Used by knex to keep track of which migrations have been run.
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **down**(knex: *`Knex`*): `any`
 
-*Defined in [Migration.ts:21](https://github.com/jmeyers91/ts-app/blob/0a84084/src/Migration.ts#L21)*
+*Defined in [Migration.ts:21](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/Migration.ts#L21)*
 
 Called when rolling back.
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **up**(knex: *`Knex`*): `any`
 
-*Defined in [Migration.ts:16](https://github.com/jmeyers91/ts-app/blob/0a84084/src/Migration.ts#L16)*
+*Defined in [Migration.ts:16](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/Migration.ts#L16)*
 
 Called when migrating.
 

@@ -18,7 +18,7 @@
 
 ▸ **main**(): `Promise`<`void`>
 
-*Defined in [entries/rollback.ts:9](https://github.com/jmeyers91/ts-app/blob/0a84084/src/entries/rollback.ts#L9)*
+*Defined in [entries/rollback.ts:9](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/entries/rollback.ts#L9)*
 
 **Returns:** `Promise`<`void`>
 

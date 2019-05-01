@@ -18,7 +18,7 @@
 
 **● migrations**: *[Migration](../interfaces/_migration_.migration.md)[]* =  [_20190428164519_create_user_table]
 
-*Defined in [migrations/index.ts:4](https://github.com/jmeyers91/ts-app/blob/0a84084/src/migrations/index.ts#L4)*
+*Defined in [migrations/index.ts:4](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/migrations/index.ts#L4)*
 
 ___
 

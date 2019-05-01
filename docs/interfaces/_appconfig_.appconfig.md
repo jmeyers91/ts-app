@@ -11,6 +11,7 @@
 ### Properties
 
 * [database](_appconfig_.appconfig.md#database)
+* [log](_appconfig_.appconfig.md#log)
 * [port](_appconfig_.appconfig.md#port)
 
 ---
@@ -23,9 +24,20 @@
 
 **● database**: *`Knex`*
 
-*Defined in [AppConfig.ts:12](https://github.com/jmeyers91/ts-app/blob/0a84084/src/AppConfig.ts#L12)*
+*Defined in [AppConfig.ts:14](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/AppConfig.ts#L14)*
 
 Database instance.
+
+___
+<a id="log"></a>
+
+###  log
+
+**● log**: *[LogFn](../modules/_appconfig_.md#logfn)*
+
+*Defined in [AppConfig.ts:19](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/AppConfig.ts#L19)*
+
+Log function.
 
 ___
 <a id="port"></a>
@@ -34,7 +46,7 @@ ___
 
 **● port**: *`number`*
 
-*Defined in [AppConfig.ts:7](https://github.com/jmeyers91/ts-app/blob/0a84084/src/AppConfig.ts#L7)*
+*Defined in [AppConfig.ts:9](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/AppConfig.ts#L9)*
 
 Webserver port.
 

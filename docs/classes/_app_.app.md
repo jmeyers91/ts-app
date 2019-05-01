@@ -17,6 +17,7 @@
 * [config](_app_.app.md#config)
 * [database](_app_.app.md#database)
 * [httpServer](_app_.app.md#httpserver)
+* [log](_app_.app.md#log)
 * [models](_app_.app.md#models)
 * [webserver](_app_.app.md#webserver)
 
@@ -40,7 +41,7 @@
 
 ⊕ **new App**(config: *[AppConfig](../interfaces/_appconfig_.appconfig.md)*): [App](_app_.app.md)
 
-*Defined in [App.ts:36](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L36)*
+*Defined in [App.ts:55](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L55)*
 
 **Parameters:**
 
@@ -60,7 +61,7 @@ ___
 
 **● config**: *[AppConfig](../interfaces/_appconfig_.appconfig.md)*
 
-*Defined in [App.ts:38](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L38)*
+*Defined in [App.ts:57](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L57)*
 
 ___
 <a id="database"></a>
@@ -69,7 +70,7 @@ ___
 
 **● database**: *`Knex`*
 
-*Defined in [App.ts:29](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L29)*
+*Defined in [App.ts:47](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L47)*
 
 Knex SQL query builder. See: [https://knexjs.org/](https://knexjs.org/)
 
@@ -80,7 +81,16 @@ ___
 
 **● httpServer**: *`HttpServer` \| `null`*
 
-*Defined in [App.ts:36](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L36)*
+*Defined in [App.ts:54](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L54)*
+
+___
+<a id="log"></a>
+
+### `<Private>` log
+
+**● log**: *[LogFn](../modules/_appconfig_.md#logfn)*
+
+*Defined in [App.ts:55](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L55)*
 
 ___
 <a id="models"></a>
@@ -89,7 +99,7 @@ ___
 
 **● models**: *`object`*
 
-*Defined in [App.ts:35](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L35)*
+*Defined in [App.ts:53](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L53)*
 
 Objection models. See: [http://vincit.github.io/objection.js/](http://vincit.github.io/objection.js/)
 
@@ -104,7 +114,7 @@ ___
 
 **● webserver**: *`Koa`*
 
-*Defined in [App.ts:23](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L23)*
+*Defined in [App.ts:41](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L41)*
 
 Koa webserver. See: [https://koajs.com/](https://koajs.com/)
 
@@ -118,7 +128,7 @@ ___
 
 ▸ **listen**(): `Promise`<`void`>
 
-*Defined in [App.ts:56](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L56)*
+*Defined in [App.ts:76](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L76)*
 
 Start listening for API requests.
 
@@ -131,7 +141,7 @@ ___
 
 ▸ **migrate**(): `Promise`<`string`[]>
 
-*Defined in [App.ts:155](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L155)*
+*Defined in [App.ts:188](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L188)*
 
 Run database migrations.
 
@@ -144,7 +154,7 @@ ___
 
 ▸ **rollback**(): `Promise`<`void`>
 
-*Defined in [App.ts:171](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L171)*
+*Defined in [App.ts:204](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L204)*
 
 Roll database back to last migration.
 
@@ -157,7 +167,7 @@ ___
 
 ▸ **seed**(): `Promise`<`void`>
 
-*Defined in [App.ts:162](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L162)*
+*Defined in [App.ts:195](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L195)*
 
 Run database seed functions.
 
@@ -170,7 +180,7 @@ ___
 
 ▸ **stop**(): `Promise`<`void`>
 
-*Defined in [App.ts:84](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L84)*
+*Defined in [App.ts:117](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L117)*
 
 Stop the app. Disconnects the database and webserver.
 
@@ -183,7 +193,7 @@ ___
 
 ▸ **test**<`T`>(body: *`function`*, overrideConfig?: *`Partial`<[AppConfig](../interfaces/_appconfig_.appconfig.md)>*): `Promise`<`T`>
 
-*Defined in [App.ts:128](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L128)*
+*Defined in [App.ts:161](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L161)*
 
 Like `transaction`, but rolls back even if the body runs successfully.
 
@@ -206,7 +216,7 @@ ___
 
 ▸ **transaction**(body: *`function`*, overrideConfig?: *`Partial`<[AppConfig](../interfaces/_appconfig_.appconfig.md)>*): `Promise`<`void`>
 
-*Defined in [App.ts:106](https://github.com/jmeyers91/ts-app/blob/0a84084/src/App.ts#L106)*
+*Defined in [App.ts:139](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/App.ts#L139)*
 
 Start an app-level transaction. The passed function receives the transaction bound app. Optionally pass config overrides as the second argument. Returns a promise that resolves when the transaction body finishes running.
 

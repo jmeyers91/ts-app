@@ -18,7 +18,7 @@
 
 ▸ **main**(): `Promise`<`void`>
 
-*Defined in [entries/start.ts:9](https://github.com/jmeyers91/ts-app/blob/0a84084/src/entries/start.ts#L9)*
+*Defined in [entries/start.ts:9](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/entries/start.ts#L9)*
 
 **Returns:** `Promise`<`void`>
 

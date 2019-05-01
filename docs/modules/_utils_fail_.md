@@ -18,7 +18,7 @@
 
 ▸ **fail**(message: *`string`*, status?: *`number`*): `never`
 
-*Defined in [utils/fail.ts:7](https://github.com/jmeyers91/ts-app/blob/0a84084/src/utils/fail.ts#L7)*
+*Defined in [utils/fail.ts:7](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/utils/fail.ts#L7)*
 
 Throw an error with an optional http status code.
 

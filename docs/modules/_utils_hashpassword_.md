@@ -18,7 +18,7 @@
 
 ▸ **hashPassword**(password: *`string`*): `Promise`<`string`>
 
-*Defined in [utils/hashPassword.ts:10](https://github.com/jmeyers91/ts-app/blob/0a84084/src/utils/hashPassword.ts#L10)*
+*Defined in [utils/hashPassword.ts:10](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/utils/hashPassword.ts#L10)*
 
 Hashes and salts a password. Returns a promise that resolves the hashed password.
 

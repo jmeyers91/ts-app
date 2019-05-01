@@ -92,6 +92,7 @@ npm run create-docs
 * ["utils/fail"](modules/_utils_fail_.md)
 * ["utils/hashPassword"](modules/_utils_hashpassword_.md)
 * ["utils/knexUtils"](modules/_utils_knexutils_.md)
+* ["utils/noop"](modules/_utils_noop_.md)
 
 ---
 

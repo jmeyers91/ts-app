@@ -18,7 +18,7 @@
 
 **● seeds**: *[Seed](_seed_.md#seed)[]* =  [createUsers]
 
-*Defined in [seeds/index.ts:4](https://github.com/jmeyers91/ts-app/blob/0a84084/src/seeds/index.ts#L4)*
+*Defined in [seeds/index.ts:4](https://github.com/jmeyers91/ts-app/blob/706bbc4/src/seeds/index.ts#L4)*
 
 ___
 
