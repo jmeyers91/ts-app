@@ -4,7 +4,7 @@ import Knex, { Transaction } from 'knex';
 import koaHelmet from 'koa-helmet';
 import koaBodyparser from 'koa-bodyparser';
 import { migrateLatest, migrateRollback } from './utils/knexUtils';
-import AppConfig from './AppConfig';
+import AppConfig, { LogFn } from './AppConfig';
 import Model from './Model';
 import migrations from './migrations';
 import Router from './Router';
@@ -16,6 +16,22 @@ import routers from './routers';
  * Adds an index signature to `typeof models`.
  */
 type ModelIndex = typeof models & { [key: string]: typeof Model };
+
+/**
+ * Properties added to Koa's `context` object in middleware.
+ */
+export interface CustomContext {
+  core: App;
+  success(body: any, status?: number): void;
+  fail(error: string, status?: number): never;
+}
+
+/**
+ * Properties added to Koa's `context.state` object in middleware.
+ */
+export interface CustomState {
+  foo?: string;
+}
 
 export default class App {
   /**
@@ -36,10 +52,12 @@ export default class App {
    */
   public readonly models: typeof models;
   private httpServer: HttpServer | null;
+  private log: LogFn;
 
   constructor(public readonly config: AppConfig) {
     this.webserver = new Koa();
     this.database = config.database;
+    this.log = config.log;
     this.httpServer = null;
 
     // Bind knex instance to each model and attach them all to this instance.
@@ -57,19 +75,28 @@ export default class App {
    */
   public async listen() {
     const api = new Router().prefix('/api');
-
-    // Add security headers
     api.use(koaBodyparser());
 
     // Attach a reference to this instance to each request
     api.use(async (context, next) => {
-      context.core = this;
-
+      const startTime = Date.now();
+      Object.assign(context, getCustomContext(this, context));
       try {
         await next();
-        console.log(context.response.status, context.request.path);
+        this.log(
+          `${context.response.status} ${context.request.path} ${Date.now() -
+            startTime}ms`,
+        );
       } catch (error) {
-        console.log(context.response.status, context.request.path, error.stack);
+        context.response.status = error.status || 400;
+        context.response.body = {
+          error: { message: error.message },
+        };
+        this.log(
+          `${context.response.status} ${context.request.path} ${Date.now() -
+            startTime}ms`,
+          error.stack,
+        );
       }
     });
 
@@ -77,7 +104,7 @@ export default class App {
       api.use(router.routes()).use(router.allowedMethods());
     }
 
-    this.webserver.use(koaHelmet());
+    this.webserver.use(koaHelmet()); // Add security headers
     this.webserver.use(api.routes()).use(api.allowedMethods());
     this.httpServer = await new Promise(resolve =>
       this.webserver.listen(this.config.port, resolve),
@@ -177,4 +204,18 @@ export default class App {
   public async rollback(): Promise<void> {
     await migrateRollback(this.database, migrations);
   }
+}
+
+function getCustomContext(app: App, context: Koa.Context): CustomContext {
+  return {
+    core: app,
+    success(body, status) {
+      context.response.status = status || 200;
+      context.response.body = body;
+    },
+
+    fail(message, status) {
+      throw Object.assign(new Error(message), { status });
+    },
+  };
 }
